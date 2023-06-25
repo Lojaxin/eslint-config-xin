@@ -1,12 +1,19 @@
+/** 
+* @Author: jiaxin 
+* @Date: 2023-06-25 16:43:58 
+* @Describe: 升级包，需要先手动修改版本号，然后再切换为npm的源再执行npm publish
+*/
 module.exports = {
     root: true,
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
+        // 'plugin:lodash/recommended'
     ],
     plugins: [
         'react',
-        'react-hooks'
+        'react-hooks',
+        'lodash'
     ],
     parser: '@babel/eslint-parser',
     parserOptions: {
