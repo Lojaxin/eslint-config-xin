@@ -11,4 +11,20 @@
 *   eslint-plugin-lodash
 *   typescript
 
-上面的这些包可以不用再另外安装到项目中，但是eslint和eslint-webpack-plugin插件还是必须要安装到项目。
+上面的这些包可以不用再另外安装到项目中，但是eslint和eslint-webpack-plugin插件必须要安装到项目。
+
+#### 1.如何使用?
+npm install eslint eslint-webpack-plugin eslint-config-xin -D
+
+-   webpack5.0
+    在webpack.config.js的插件中集成eslint
+```
+//在webpack中集成eslint
+new EslintWebpackPlugin({
+    eslintPath: 'eslint',
+    extensions: ['js', 'ts', 'jsx', 'tsx'],
+    exclude: ['node_modules', 'dist', 'true'],
+    fix: true, //是否自动修复
+    formatter: 'stylish'
+}),
+```
