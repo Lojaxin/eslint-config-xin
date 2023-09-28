@@ -28,3 +28,5 @@ new EslintWebpackPlugin({
     formatter: 'stylish'
 }),
 ```
+#### 2.注意:
+项目的 eslint 版本必须是 7.x!!
